@@ -13,27 +13,31 @@ public class verifypot : MonoBehaviour
     public float height = .5f;
 
     bool starttimer= false;
+    public bool touchstove = false;
 
     // Use this for initialization
     void Start()
     {
         // Instantiate an object to the right of the current object
-        Vector3 potPos = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
-        Instantiate(flames, new Vector3( potPos.x, potPos.y + height, potPos.z ), transform.rotation );
+
     }
 
 
     // Update is called once per frame
     void Update()
     {
-        if (starttimer = true)
+        if (touchstove == true && starttimer == true)
         {
             time -= Time.deltaTime;
             {
                 if (time < 0)
                 {
                     //flames start 
+                    Vector3 potPos = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
+                    Instantiate(flames, new Vector3(potPos.x, potPos.y + height, potPos.z), transform.rotation);
+
                     starttimer = false;
+                    print(time);
                 }
             }
         }

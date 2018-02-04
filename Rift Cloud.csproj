@@ -298,8 +298,10 @@
     <Compile Include="Assets\Curtis Stuff\Scripts\Cooking Pot.cs" />
     <Compile Include="Assets\Curtis Stuff\Scripts\Spawn Stuff.cs" />
     <Compile Include="Assets\Curtis Stuff\Scripts\Spawn2.cs" />
+    <Compile Include="Assets\Curtis Stuff\Scripts\UpdateCrap.cs" />
     <Compile Include="Assets\destroyChoppedFood.cs" />
     <Compile Include="Assets\Diane Folder\script\despawn.cs" />
+    <Compile Include="Assets\Diane Folder\script\invisiSpawn.cs" />
     <Compile Include="Assets\Diane Folder\script\Stove.cs" />
     <Compile Include="Assets\Diane Folder\script\verifypot.cs" />
     <Compile Include="Assets\EffectExamples\Shared\Scripts\DecalDestroyer.cs" />
@@ -309,10 +311,12 @@
     <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleCollision.cs" />
     <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleExamples.cs" />
     <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleMenu.cs" />
+    <Compile Include="Assets\Josue\Scripts\plateFood.cs" />
     <Compile Include="Assets\Kevin\Scripts\cameraMove.cs" />
     <Compile Include="Assets\Kevin\Scripts\spawnSlice.cs" />
     <Compile Include="Assets\OculusPlatform\Scripts\AchievementType.cs" />
     <Compile Include="Assets\OculusPlatform\Scripts\AndroidPlatform.cs" />
+    <Compile Include="Assets\OculusPlatform\Scripts\ApplicationOptions.cs" />
     <Compile Include="Assets\OculusPlatform\Scripts\BufferedAudioStream.cs" />
     <Compile Include="Assets\OculusPlatform\Scripts\Callback.cs" />
     <Compile Include="Assets\OculusPlatform\Scripts\CallbackRunner.cs" />
@@ -333,6 +337,7 @@
     <Compile Include="Assets\OculusPlatform\Scripts\MatchmakingCriterionImportance.cs" />
     <Compile Include="Assets\OculusPlatform\Scripts\MatchmakingOptions.cs" />
     <Compile Include="Assets\OculusPlatform\Scripts\MatchmakingStatApproach.cs" />
+    <Compile Include="Assets\OculusPlatform\Scripts\MediaContentType.cs" />
     <Compile Include="Assets\OculusPlatform\Scripts\Message.cs" />
     <Compile Include="Assets\OculusPlatform\Scripts\MicrophoneInput.cs" />
     <Compile Include="Assets\OculusPlatform\Scripts\MicrophoneInputNative.cs" />
@@ -340,6 +345,10 @@
     <Compile Include="Assets\OculusPlatform\Scripts\Models\AchievementProgress.cs" />
     <Compile Include="Assets\OculusPlatform\Scripts\Models\AchievementUpdate.cs" />
     <Compile Include="Assets\OculusPlatform\Scripts\Models\ApplicationVersion.cs" />
+    <Compile Include="Assets\OculusPlatform\Scripts\Models\AssetFileDeleteResult.cs" />
+    <Compile Include="Assets\OculusPlatform\Scripts\Models\AssetFileDownloadCancelResult.cs" />
+    <Compile Include="Assets\OculusPlatform\Scripts\Models\AssetFileDownloadResult.cs" />
+    <Compile Include="Assets\OculusPlatform\Scripts\Models\AssetFileDownloadUpdate.cs" />
     <Compile Include="Assets\OculusPlatform\Scripts\Models\CloudStorageConflictMetadata.cs" />
     <Compile Include="Assets\OculusPlatform\Scripts\Models\CloudStorageData.cs" />
     <Compile Include="Assets\OculusPlatform\Scripts\Models\CloudStorageMetadata.cs" />
@@ -373,11 +382,13 @@
     <Compile Include="Assets\OculusPlatform\Scripts\Models\Room.cs" />
     <Compile Include="Assets\OculusPlatform\Scripts\Models\RoomInviteNotification.cs" />
     <Compile Include="Assets\OculusPlatform\Scripts\Models\SdkAccount.cs" />
+    <Compile Include="Assets\OculusPlatform\Scripts\Models\ShareMediaResult.cs" />
     <Compile Include="Assets\OculusPlatform\Scripts\Models\SystemPermission.cs" />
     <Compile Include="Assets\OculusPlatform\Scripts\Models\SystemVoipState.cs" />
     <Compile Include="Assets\OculusPlatform\Scripts\Models\User.cs" />
     <Compile Include="Assets\OculusPlatform\Scripts\Models\UserAndRoom.cs" />
     <Compile Include="Assets\OculusPlatform\Scripts\Models\UserProof.cs" />
+    <Compile Include="Assets\OculusPlatform\Scripts\Models\UserReportID.cs" />
     <Compile Include="Assets\OculusPlatform\Scripts\Packet.cs" />
     <Compile Include="Assets\OculusPlatform\Scripts\PeerConnectionState.cs" />
     <Compile Include="Assets\OculusPlatform\Scripts\PermissionGrantStatus.cs" />
@@ -394,6 +405,7 @@
     <Compile Include="Assets\OculusPlatform\Scripts\RoomType.cs" />
     <Compile Include="Assets\OculusPlatform\Scripts\SdkAccountType.cs" />
     <Compile Include="Assets\OculusPlatform\Scripts\SendPolicy.cs" />
+    <Compile Include="Assets\OculusPlatform\Scripts\ShareMediaStatus.cs" />
     <Compile Include="Assets\OculusPlatform\Scripts\StandalonePlatform.cs" />
     <Compile Include="Assets\OculusPlatform\Scripts\StandalonePlatformSettings.cs" />
     <Compile Include="Assets\OculusPlatform\Scripts\SystemVoipStatus.cs" />
