@@ -10,8 +10,10 @@ namespace Oculus.Platform
 
   public abstract class Message<T> : Message
   {
-    public delegate void Callback(Message<T> message);
-    public Message(IntPtr c_message) : base(c_message) {
+#pragma warning disable CS0108 // Member hides inherited member; missing new keyword
+        public delegate void Callback(Message<T> message);
+#pragma warning restore CS0108 // Member hides inherited member; missing new keyword
+        public Message(IntPtr c_message) : base(c_message) {
       if (!IsError)
       {
         data = GetDataFromMessage(c_message);

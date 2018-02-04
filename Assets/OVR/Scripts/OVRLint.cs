@@ -369,46 +369,37 @@ public class OVRLint : EditorWindow
 #endif
 
 		var lights = GameObject.FindObjectsOfType<Light> ();
-		for (int i = 0; i < lights.Length; ++i) 
-		{
+		for (int i = 0; i < lights.Length; ++i)
+        {
 #if UNITY_5_4_OR_NEWER
-			if (lights [i].type != LightType.Directional && !lights [i].isBaked && IsLightBaked(lights[i]))
-			{
-				AddFix ("Optimize Light Baking", "For GPU performance, please bake lightmaps to avoid realtime lighting cost.", delegate(UnityEngine.Object obj, bool last, int selected) 
-				{
-					if (last)
-					{
-						Lightmapping.Bake ();
-					}
-				}, lights[i], "Bake Lightmaps");
-			}
+            NewMethod(lights, i);
 #endif
 
-			if (lights [i].shadows != LightShadows.None && !IsLightBaked(lights[i]))
-			{
-			    AddFix ("Optimize Shadows", "For CPU performance, please disable shadows on realtime lights.", delegate(UnityEngine.Object obj, bool last, int selected) 
-			    {
-			    	Light thisLight = (Light)obj;
-					thisLight.shadows = LightShadows.None;
-				}, lights [i], "Disable Shadows");
-			}
-		}
+            if (lights[i].shadows != LightShadows.None && !IsLightBaked(lights[i]))
+            {
+                AddFix("Optimize Shadows", "For CPU performance, please disable shadows on realtime lights.", delegate (UnityEngine.Object obj, bool last, int selected)
+                {
+                    Light thisLight = (Light)obj;
+                    thisLight.shadows = LightShadows.None;
+                }, lights[i], "Disable Shadows");
+            }
+        }
 
-/*
-		// CP: I think this should modify the max number of simultaneous voices in the audio settings rather than
-		// the number of sources.  Sources don't cost anything if they aren't playing simultaneously.
-		// Couldn't figure out if there's an API for max voices.
-		var sources = GameObject.FindObjectsOfType<AudioSource> ();
-		if (sources.Length > 16 &&
-		    EditorUtility.DisplayDialog ("Optimize Audio Source Count", "For CPU performance, please disable all but the top 16 AudioSources.", "Use recommended", "Skip")) {
-			Array.Sort(sources, (a, b) => { return a.priority.CompareTo(b.priority); });
-			for (int i = 16; i < sources.Length; ++i) {
-				sources[i].enabled = false;
-			}
-		}
-*/
+        /*
+                // CP: I think this should modify the max number of simultaneous voices in the audio settings rather than
+                // the number of sources.  Sources don't cost anything if they aren't playing simultaneously.
+                // Couldn't figure out if there's an API for max voices.
+                var sources = GameObject.FindObjectsOfType<AudioSource> ();
+                if (sources.Length > 16 &&
+                    EditorUtility.DisplayDialog ("Optimize Audio Source Count", "For CPU performance, please disable all but the top 16 AudioSources.", "Use recommended", "Skip")) {
+                    Array.Sort(sources, (a, b) => { return a.priority.CompareTo(b.priority); });
+                    for (int i = 16; i < sources.Length; ++i) {
+                        sources[i].enabled = false;
+                    }
+                }
+        */
 
-		var clips = GameObject.FindObjectsOfType<AudioClip> ();
+        var clips = GameObject.FindObjectsOfType<AudioClip> ();
 		for (int i = 0; i < clips.Length; ++i) 
 		{
 			if (clips [i].loadType == AudioClipLoadType.DecompressOnLoad)
@@ -539,7 +530,23 @@ public class OVRLint : EditorWindow
 		}
 	}
 
-	static void CheckRuntimeCommonIssues()
+    private static void NewMethod(Light[] lights, int i)
+    {
+#pragma warning disable CS0618 // Type or member is obsolete
+        if (lights[i].type != LightType.Directional && !lights[i].isBaked && IsLightBaked(lights[i]))
+#pragma warning restore CS0618 // Type or member is obsolete
+        {
+            AddFix("Optimize Light Baking", "For GPU performance, please bake lightmaps to avoid realtime lighting cost.", delegate (UnityEngine.Object obj, bool last, int selected)
+            {
+                if (last)
+                {
+                    Lightmapping.Bake();
+                }
+            }, lights[i], "Bake Lightmaps");
+        }
+    }
+
+    static void CheckRuntimeCommonIssues()
 	{
 		if (!OVRPlugin.occlusionMesh)
 		{

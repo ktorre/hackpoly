@@ -295,6 +295,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Curtis Stuff\Scripts\Chopping.cs" />
+    <Compile Include="Assets\Curtis Stuff\Scripts\Cooking Pot.cs" />
+    <Compile Include="Assets\Curtis Stuff\Scripts\Spawn Stuff.cs" />
+    <Compile Include="Assets\Curtis Stuff\Scripts\Spawn2.cs" />
+    <Compile Include="Assets\destroyChoppedFood.cs" />
+    <Compile Include="Assets\Diane Folder\script\despawn.cs" />
     <Compile Include="Assets\EffectExamples\Shared\Scripts\DecalDestroyer.cs" />
     <Compile Include="Assets\EffectExamples\Shared\Scripts\ExtinguishableFire.cs" />
     <Compile Include="Assets\EffectExamples\Shared\Scripts\GunAim.cs" />

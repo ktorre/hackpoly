@@ -1128,6 +1128,7 @@ GameObject:
   - component: {fileID: 54816843194143344}
   - component: {fileID: 65342041272835272}
   - component: {fileID: 135153056017509078}
+  - component: {fileID: 114781882130881418}
   m_Layer: 0
   m_Name: onion
   m_TagString: Respawn
@@ -6955,6 +6956,21 @@ MonoBehaviour:
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
+--- !u!114 &114781882130881418
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1767711403783120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86814b46c23ac6b46b2a9cdb2e5f62eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transformLocal: {x: 0, y: 0, z: 0}
+  Replacements: {fileID: 1767711403783120}
+  scale: {x: 0.05, y: 0.05, z: 0.05}
+  HitPoints: 0
 --- !u!135 &135153056017509078
 SphereCollider:
   m_ObjectHideFlags: 1

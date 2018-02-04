@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Chopping : MonoBehaviour {
 
+    public string Tag_to_destroy;
 	// Use this for initialization
 	void Start () {
 		
@@ -15,7 +16,13 @@ public class Chopping : MonoBehaviour {
 	}
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Food")
-            Destroy(other);
+
+        if (other.tag == Tag_to_destroy)
+        {
+            
+
+        }
+
+           
     }
 }

@@ -67,7 +67,12 @@ ModelImporter:
     4300014: Sphere016
     4300016: Sphere017
     4300018: Sphere018
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cylinder002Mat
+    second: {fileID: 2100000, guid: 0ae8aab4ae40e7741a636cf6e5136a55, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

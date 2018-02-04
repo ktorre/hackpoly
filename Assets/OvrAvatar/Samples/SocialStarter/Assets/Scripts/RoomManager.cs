@@ -28,7 +28,9 @@ public class RoomManager
     {
         amIServer = false;
         startupDone = false;
+#pragma warning disable CS0618 // Type or member is obsolete
         Rooms.SetRoomInviteNotificationCallback(AcceptingInviteCallback);
+#pragma warning restore CS0618 // Type or member is obsolete
         Rooms.SetUpdateNotificationCallback(RoomUpdateCallback);
     }
 
