@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 114037599108689132}
   m_Layer: 0
   m_Name: Tomato_Slice_SLP
-  m_TagString: ReadyIngredent
+  m_TagString: choppedFood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

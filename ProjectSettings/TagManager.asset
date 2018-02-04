@@ -10,6 +10,11 @@ TagManager:
   - ReadyIngredent
   - choppedFood
   - tomatoSlice
+  - cookedFood
+  - water
+  - score
+  - pot
+  - pot.empty
   layers:
   - Default
   - TransparentFX

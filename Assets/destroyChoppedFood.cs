@@ -2,23 +2,32 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class destroyChoppedFood : MonoBehaviour {
+public class Stove : MonoBehaviour
+{
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
-    private void OnCollisionEnter(Collision collision)
+    public string pan;
+    public bool touchstove = false;
+    // Use this for initialization
+    void Start()
     {
-        if (collision.gameObject.tag == "choppedFood")
+
+    }
+
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+    void OnTriggerEnter(Collider other)
+    {
+
+        if (other.tag == pan)
         {
-            Destroy(collision.gameObject);
+            //call verifypot.cs
+            other.GetComponent<verifypot>().touchstove = true;
         }
+
+
     }
 }

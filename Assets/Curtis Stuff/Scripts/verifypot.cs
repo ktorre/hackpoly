@@ -40,7 +40,7 @@ public class verifypot : MonoBehaviour
                     //flames start 
                     Vector3 potPos = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
                     Instantiate(flames, new Vector3(potPos.x, potPos.y + height, potPos.z), transform.rotation);
-                    
+                    this.tag = "pot.full";
                     starttimer = false;
                     print(time);
                 }

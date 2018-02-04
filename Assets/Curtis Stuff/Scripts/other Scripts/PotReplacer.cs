@@ -20,7 +20,7 @@ public class PotReplacer : MonoBehaviour {
 
     private void OnCollisionEnter(Collision crash)
     {
-        if (crash.gameObject.tag == "Tool"){
+        if ((crash.gameObject.tag == "pot.empty" ) || (crash.gameObject.tag == "pot.full")){
             //this.transform=transformLocal;
 
         }

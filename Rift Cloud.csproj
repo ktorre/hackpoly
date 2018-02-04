@@ -296,14 +296,16 @@
   <ItemGroup>
     <Compile Include="Assets\Curtis Stuff\Scripts\Chopping.cs" />
     <Compile Include="Assets\Curtis Stuff\Scripts\Cooking Pot.cs" />
+    <Compile Include="Assets\Curtis Stuff\Scripts\Object Parsing.cs" />
+    <Compile Include="Assets\Curtis Stuff\Scripts\Object2.cs" />
+    <Compile Include="Assets\Curtis Stuff\Scripts\other Scripts\PotReplacer.cs" />
     <Compile Include="Assets\Curtis Stuff\Scripts\Spawn Stuff.cs" />
     <Compile Include="Assets\Curtis Stuff\Scripts\Spawn2.cs" />
     <Compile Include="Assets\Curtis Stuff\Scripts\UpdateCrap.cs" />
+    <Compile Include="Assets\Curtis Stuff\Scripts\verifypot.cs" />
     <Compile Include="Assets\destroyChoppedFood.cs" />
     <Compile Include="Assets\Diane Folder\script\despawn.cs" />
     <Compile Include="Assets\Diane Folder\script\invisiSpawn.cs" />
-    <Compile Include="Assets\Diane Folder\script\Stove.cs" />
-    <Compile Include="Assets\Diane Folder\script\verifypot.cs" />
     <Compile Include="Assets\EffectExamples\Shared\Scripts\DecalDestroyer.cs" />
     <Compile Include="Assets\EffectExamples\Shared\Scripts\ExtinguishableFire.cs" />
     <Compile Include="Assets\EffectExamples\Shared\Scripts\GunAim.cs" />
@@ -311,10 +313,15 @@
     <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleCollision.cs" />
     <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleExamples.cs" />
     <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleMenu.cs" />
-    <Compile Include="Assets\Josue\Scripts\plateFood.cs" />
+    <Compile Include="Assets\firePoint.cs" />
+    <Compile Include="Assets\foodRespawn.cs" />
     <Compile Include="Assets\Kevin\Scripts\cameraMove.cs" />
-    <Compile Include="Assets\Kevin\Scripts\music.cs" />
+    <Compile Include="Assets\Kevin\Scripts\ExitButton.cs" />
+    <Compile Include="Assets\Kevin\Scripts\goUp.cs" />
+    <Compile Include="Assets\Kevin\Scripts\keepScore.cs" />
+    <Compile Include="Assets\Kevin\Scripts\musicClass.cs" />
     <Compile Include="Assets\Kevin\Scripts\spawnSlice.cs" />
+    <Compile Include="Assets\Materials\plateFood.cs" />
     <Compile Include="Assets\OculusPlatform\Scripts\AchievementType.cs" />
     <Compile Include="Assets\OculusPlatform\Scripts\AndroidPlatform.cs" />
     <Compile Include="Assets\OculusPlatform\Scripts\ApplicationOptions.cs" />
@@ -509,6 +516,7 @@
     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarSkinnedMeshRenderComponent.cs" />
     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarSkinnedMeshRenderPBSComponent.cs" />
     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarTouchController.cs" />
+    <Compile Include="Assets\PlateFood.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
@@ -553,6 +561,7 @@
     <Compile Include="Assets\PostProcessing\Runtime\Utils\GraphicsUtils.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
+    <Compile Include="Assets\Stove1.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />
