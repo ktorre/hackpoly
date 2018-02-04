@@ -313,6 +313,7 @@
     <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleMenu.cs" />
     <Compile Include="Assets\Josue\Scripts\plateFood.cs" />
     <Compile Include="Assets\Kevin\Scripts\cameraMove.cs" />
+    <Compile Include="Assets\Kevin\Scripts\music.cs" />
     <Compile Include="Assets\Kevin\Scripts\spawnSlice.cs" />
     <Compile Include="Assets\OculusPlatform\Scripts\AchievementType.cs" />
     <Compile Include="Assets\OculusPlatform\Scripts\AndroidPlatform.cs" />
