@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: [fullTomato, Tool, Food, ReadyIngredent, choppedFood]
+  tags:
+  - fullTomato
+  - Tool
+  - Food
+  - ReadyIngredent
+  - choppedFood
+  - tomatoSlice
   layers:
   - Default
   - TransparentFX

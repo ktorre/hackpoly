@@ -300,6 +300,8 @@
     <Compile Include="Assets\Curtis Stuff\Scripts\Spawn2.cs" />
     <Compile Include="Assets\destroyChoppedFood.cs" />
     <Compile Include="Assets\Diane Folder\script\despawn.cs" />
+    <Compile Include="Assets\Diane Folder\script\Stove.cs" />
+    <Compile Include="Assets\Diane Folder\script\verifypot.cs" />
     <Compile Include="Assets\EffectExamples\Shared\Scripts\DecalDestroyer.cs" />
     <Compile Include="Assets\EffectExamples\Shared\Scripts\ExtinguishableFire.cs" />
     <Compile Include="Assets\EffectExamples\Shared\Scripts\GunAim.cs" />

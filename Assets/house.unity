@@ -1819,6 +1819,41 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 135153056017509078, guid: ea414f97058e3cd43ada7368fdf69b49,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65342041272835272, guid: ea414f97058e3cd43ada7368fdf69b49,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 2.158824
+      objectReference: {fileID: 0}
+    - target: {fileID: 65342041272835272, guid: ea414f97058e3cd43ada7368fdf69b49,
+        type: 2}
+      propertyPath: m_Center.x
+      value: -0.57941145
+      objectReference: {fileID: 0}
+    - target: {fileID: 65342041272835272, guid: ea414f97058e3cd43ada7368fdf69b49,
+        type: 2}
+      propertyPath: m_Size.z
+      value: 2.4034119
+      objectReference: {fileID: 0}
+    - target: {fileID: 65342041272835272, guid: ea414f97058e3cd43ada7368fdf69b49,
+        type: 2}
+      propertyPath: m_Center.z
+      value: -0.4087639
+      objectReference: {fileID: 0}
+    - target: {fileID: 65342041272835272, guid: ea414f97058e3cd43ada7368fdf69b49,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 1.6500092
+      objectReference: {fileID: 0}
+    - target: {fileID: 65342041272835272, guid: ea414f97058e3cd43ada7368fdf69b49,
+        type: 2}
+      propertyPath: m_Center.y
+      value: 0.060572624
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114781882130881418, guid: ea414f97058e3cd43ada7368fdf69b49, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: ea414f97058e3cd43ada7368fdf69b49, type: 2}
@@ -2792,12 +2827,16 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1752106838}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ae869b15281991743b36c25c38951d9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Tag_to_destroy: Food
+  Destroyer: 
+  HitPoints: 0
+  transformLocal: {x: 0, y: 0, z: 0}
+  Replacements: {fileID: 0}
+  scale: {x: 0, y: 0, z: 0}
 --- !u!64 &1752106840
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3028,16 +3067,29 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1855642917}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 86814b46c23ac6b46b2a9cdb2e5f62eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transformLocal: {x: -0.2, y: 3.147, z: 2.637}
+  HitPoints: 15
+--- !u!114 &1855642924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1855642917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae869b15281991743b36c25c38951d9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Destroyer: Tool
+  HitPoints: 20
+  transformLocal: {x: -0.19, y: 3.147, z: 2.637}
   Replacements: {fileID: 1358373418528360, guid: e838b0e3ee60a5f48867efd59a151a26,
     type: 2}
-  scale: {x: 0.25, y: 0.25, z: 0.25}
-  HitPoints: 15
+  scale: {x: 0.18, y: 0.18, z: 0.18}
 --- !u!1 &1879248831
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Josue/josueHouse.unity
+- path: Assets/Diane Folder/Updated house.unity
   isLoaded: 1
   isActive: 1

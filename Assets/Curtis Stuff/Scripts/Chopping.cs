@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class Chopping : MonoBehaviour {
 
-    public string Tag_to_destroy;
-	// Use this for initialization
-	void Start () {
+    public string Destroyer;
+    public int HitPoints;
+    public Vector3 transformLocal;
+    public GameObject Replacements;
+    public Vector3 scale;
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -17,9 +21,22 @@ public class Chopping : MonoBehaviour {
     void OnTriggerEnter(Collider other)
     {
 
-        if (other.tag == Tag_to_destroy)
+        if (other.tag == Destroyer)
         {
-            
+
+            print(HitPoints);
+            if (HitPoints > 1)
+            {
+                HitPoints--;
+            }
+            else
+            {
+                GameObject thing;
+                thing = GameObject.Instantiate(Replacements, transformLocal, new Quaternion(0, 0, 0, 0));
+                thing.transform.localScale = scale;
+                Destroy(this.gameObject);
+                    
+            }
 
         }
 
